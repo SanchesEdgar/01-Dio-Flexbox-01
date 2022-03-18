@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - display flex (container flexbox)</title>
+  </head>
+  <style>
+    /* classe que transforma o elemento html em container flexbox */
+    .flex {
+      max-width: 300px;
+      padding: 10px;
+      border: 2px solid black;
+      display: flex;
+      font-weight: bold;
+    }
+
+    /* classe de configuração dos elementos filhos do container flexbox*/
+    .item {
+      background-color: darkblue;
+      margin: 5px;
+      padding: 5px;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="flex">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+    </div>
+  </body>
+</html>
