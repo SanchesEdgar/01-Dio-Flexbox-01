@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - Flexbox - Atributo flex-direction</title>
+    <style>
+      /*
+            Observação: para fins didáticos de aprendizado eu carreguei
+            nos comentários, mas sei que não é uma boa prática no projeto real
+            como o livro código limpo diz comentários são traiçoeiros.
+        */
+
+      /* classe (regra) que configura e transforma o elemento em flexbox container */
+      .flex-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+      }
+      /* classe (regra) configura o item (filho) do flexbox container */
+      .flex-item {
+        background-color: blue;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        margin: 5px;
+      }
+
+      /* classe (regra) que atribui a orientação para linha da esquerda para direita(default) */
+      .row {
+        flex-direction: row;
+      }
+
+      /* classe (regra) que atribui a orientação para linha da esquerda para direita(default) */
+      .row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      /* classe (regra) que atribui a cor do background dos itens */
+      .row-reverse li {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Exemplo de aplicação do atributo row (padrão)</h2>
+    <ul class="flex-container row">
+      <li class="flex-item">1</li>
+      <li class="flex-item">2</li>
+      <li class="flex-item">3</li>
+      <li class="flex-item">4</li>
+      <li class="flex-item">5</li>
+    </ul>
+
+    <h2>Exemplo de aplicação do atributo row-reverse</h2>
+
+    <ul class="flex-container row-reverse">
+      <li class="flex-item">1</li>
+      <li class="flex-item">2</li>
+      <li class="flex-item">3</li>
+      <li class="flex-item">4</li>
+      <li class="flex-item">5</li>
+    </ul>
+  </body>
+</html>
